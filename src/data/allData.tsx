@@ -1,5 +1,5 @@
-import axios from "axios";
 import React from "react";
+import axios from "axios";
 const baseUrl = process.env.REACT_APP_API_BASE_URL;
 import { useQuery } from "react-query";
 
@@ -17,16 +17,3 @@ function albumList() {
 }
 
 export default albumList;
-// function fetchAlbums() {
-//   return axios({
-//     url: `${process.env.REACT_APP_API_BASE_URL}/api/v1/albums`,
-//     params: { limit: 100 },
-//   }).then((res) => res.data);
-// }
-
-// const AlbumListPage = () => {
-//   const albumsQuery = useQuery("albums", fetchAlbums);
-//   return <AlbumList {...albumsQuery} />;
-// };
-
-// export default AlbumListPage;
