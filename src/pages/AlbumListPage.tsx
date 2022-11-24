@@ -1,6 +1,11 @@
 import React from "react";
+import allData from "../data/allData";
+
 function AlbumListPage() {
-  return <h1>tambien la mas inteliburra</h1>;
+  const [data, status, error, isError, isLoading, todito] = allData();
+  console.log(isLoading);
+
+  return <h1>tambien la mas pechocococococ</h1>;
 }
 
 export default AlbumListPage;
